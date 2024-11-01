@@ -254,3 +254,62 @@ h2 {
     text-align: center;
     margin: 0 auto;
 }
+
+/* Base styling adjustments */
+.section .content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Activity container styling for two-column layout */
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    gap: 20px;
+}
+
+/* Image styling for better alignment with text */
+.activity img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments for screens narrower than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+    /* Center the section content for smaller screens */
+    .section {
+        padding: 20px;
+    }
+
+    /* Stack activity items vertically */
+    .activity {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Center and resize images for mobile */
+    .activity img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 1em auto;
+    }
+
+    /* Adjust font sizes for readability on smaller screens */
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+}
