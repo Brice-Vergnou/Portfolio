@@ -1,0 +1,256 @@
+/* Reset margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full height body */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+/* Full-screen sections */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    max-width: 800px;
+    color: #333;
+}
+
+/* Fixed top navigation menu */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 10;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    transition: background-color 0.3s;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#navbar a:hover {
+    background-color: #d4a373;
+    color: white;
+}
+
+/* Section colors */
+#welcome {
+    background-color: #ccd5ae;
+    color: #333;
+}
+
+#engineering {
+    background-color: #e9edc9;
+    color: #333;
+}
+
+#mobility {
+    background-color: #fefae0;
+    color: #333;
+}
+
+#sustainability {
+    background-color: #faedcd;
+    color: #333;
+}
+
+#sports {
+    background-color: #e7c8a0;
+    color: #333;
+}
+
+#career {
+    background-color: #d4a373;
+    color: #333;
+}
+
+/* Enhanced text styling */
+h1, h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    max-width: 600px;
+    margin-bottom: 1.2em; /* Space below each paragraph */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.7em; /* More space below the main heading */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 0.3em;
+    margin: 0.5em 0 1em; /* Adding space around headings and info */
+}
+
+h4 {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 1em;
+    margin-bottom: 0.7em; /* More space below the main heading */
+}
+
+.course-list {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #333;
+    text-align: left;
+}
+
+/* Styling for ENSEEIHT logo image */
+.n7-logo {
+    width: 50%;
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 5px;
+}
+
+/* Centered styling for Mobility section headings and info */
+h3, .mobility-info {
+    text-align: center;
+    margin: 0.5em 0 1em; /* Adding space around headings and info */
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Existing styling for section headings */
+
+/* Centered styling for activity section headings */
+h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 1em 0 0.5em;
+    text-align: center;
+}
+
+/* Paragraph and general spacing */
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-bottom: 1.2em;
+    color: #333;
+    text-align: justify;
+}
+
+/* Floating images styling */
+.float-right {
+    width: 150px;
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 5px;
+}
+
+.float-left {
+    width: 150px;
+    float: left;
+    margin: 0 15px 15px 0;
+    border-radius: 5px;
+}
+
+/* Section title styling */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Activity container styling for two-column layout */
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    gap: 20px;
+}
+
+/* Image styling for better alignment with text */
+.activity img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Text styling within activity sections */
+.activity h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.activity p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #333;
+    max-width: 400px;
+    text-align: justify;
+}
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+    .activity {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .activity img {
+        margin: 0 auto 1em auto;
+    }
+}
+
+
+/* Center align all content within each section */
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.section .content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
